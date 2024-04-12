@@ -16,7 +16,7 @@ export function phrase_match(query: string, phrase: string): boolean {
         return true;
     }
 
-    const parts = phrase.split(" ");
+    const parts = phrase.split(/[ .,;:'"/?!\[\]{}()@-]/);
     for (i = 0; i < parts.length; i += 1) {
         if (parts[i].startsWith(query)) {
             return true;
