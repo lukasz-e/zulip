@@ -196,7 +196,7 @@ class Migration(migrations.Migration):
     atomic = False
 
     dependencies = [
-        ("zerver", "0496_alter_scheduledmessage_read_by_sender"),
+        ("zerver", "0500_change_max_topic_len"),
     ]
 
     operations = [
